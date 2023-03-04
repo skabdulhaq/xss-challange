@@ -111,4 +111,5 @@ def level7():
     return f"Hello {name} welcome to level7"
 
 
-app.run("0.0.0.0", 3000, debug=True)
+if __name__ == "__main__":
+    app.run("0.0.0.0", 3000, debug=True)
