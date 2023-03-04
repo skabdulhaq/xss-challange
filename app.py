@@ -9,7 +9,7 @@ def home():
     for _ in range(8):
         data = f"<br><a href='/level{_}'>Level-{_}</a><br>"
         response+=data
-    res = make_response(response+'<p>Trigger a alert(document.domain) as a proof of XSS</p><br><a href="#">Source code</a>')
+    res = make_response(response+'<p>Trigger a alert(document.domain) as a proof of XSS</p><br><a href="https://github.com/skabdulhaq/xss-challange/blob/main/app.py">Source code</a>')
     return res
 
 
